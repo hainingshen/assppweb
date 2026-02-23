@@ -1,6 +1,6 @@
 # Cloudflare Deploy (Workers + Containers)
 
-This folder contains an isolated Cloudflare deployment target for AssppWeb.
+This repository contains an isolated Cloudflare deployment target for AssppWeb.
 
 ## Why Containers
 
@@ -15,16 +15,14 @@ Cloudflare Containers runs the existing Dockerized app with minimal changes.
 ## Deploy
 
 ```bash
-cd cloudflare
 npm install
-npx wrangler login
+# Use either `npx wrangler login` locally or set CLOUDFLARE_API_TOKEN in CI
 npm run deploy
 ```
 
 For local preview on Cloudflare runtime:
 
 ```bash
-cd cloudflare
 npm install
 npm run dev
 ```
