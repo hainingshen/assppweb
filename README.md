@@ -20,6 +20,8 @@ npm install
 npm run deploy
 ```
 
+`npm run deploy` performs a real deploy when `CLOUDFLARE_API_TOKEN` is present; otherwise it automatically falls back to `wrangler deploy --dry-run` for CI validation.
+
 For local preview on Cloudflare runtime:
 
 ```bash
